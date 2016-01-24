@@ -1,5 +1,9 @@
 package common;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -73,7 +77,22 @@ public class MovieManager {
 		//System.out.println(Arrays.toString(Tools.getMovieTitles(movies1)));
 		//System.out.println(Tools.countMoviesPerPerson(movies1));
 		
-			
+		//////////////////////////////////////////////////////////
+		
+		final String FILENAME = "movies_output.xml";
+		PrintWriter writer = null;
+		
+		try {
+			FileWriter fw = new FileWriter(FILENAME, true);
+			writer = new PrintWriter(fw);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		writer.println(movie1.toXMLString() + person1.toXMLString());
+		
+		writer.close();
+		
 	}
 
 }

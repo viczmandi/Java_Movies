@@ -48,7 +48,7 @@ public class Movie {
 		bs.append(Tools.toXMLTag("duration", String.valueOf(this.duration)));
 		bs.append(Tools.toXMLTag("rate", String.valueOf(this.rate)));
 		bs.append(Tools.toXMLTag("cast", this.cast.toString()));
-		bs.append("</movie>");
+		bs.append("\n</movie>");
 		return bs.toString();
 		
 	}
