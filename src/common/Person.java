@@ -39,6 +39,7 @@ public class Person {
 		this.hasGoldenGlobe = hasGoldenGlobe;
 	}
 	
+	// overriding the toString() method
 	public String toString(){
 		return firstName + " " + lastName;
 	}
