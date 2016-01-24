@@ -39,6 +39,10 @@ public class Person {
 		this.hasGoldenGlobe = hasGoldenGlobe;
 	}
 	
+	public String toString(){
+		return firstName + " " + lastName;
+	}
+	
 	public String toXMLString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("<person>");

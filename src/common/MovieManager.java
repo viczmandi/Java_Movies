@@ -1,6 +1,8 @@
 package common;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class MovieManager {
 
@@ -68,9 +70,9 @@ public class MovieManager {
 		//////////////////////////////////////////////////////////
 		
 		//System.out.println(person1.toXMLString());
-		//System.out.println(Tools.getMovieTitles(movies1));
+		//System.out.println(Arrays.toString(Tools.getMovieTitles(movies1)));
 		//System.out.println(Tools.countMoviesPerPerson(movies1));
-		System.out.println(movie1);
+		
 			
 	}
 
