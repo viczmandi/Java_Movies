@@ -52,7 +52,7 @@ public class Person {
 		sb.append(Tools.toXMLTag("gender", this.gender.toString()));
 		sb.append(Tools.toXMLTag("hasOscar", String.valueOf(this.hasOscar)));
 		sb.append(Tools.toXMLTag("hasGoldenGlobe", String.valueOf(this.hasGoldenGlobe)));
-		sb.append("\n</person>");
+		sb.append("\n</person>\n");
 		return sb.toString();
 	}
 

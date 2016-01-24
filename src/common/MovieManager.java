@@ -83,14 +83,14 @@ public class MovieManager {
 		PrintWriter writer = null;
 		
 		try {
-			FileWriter fw = new FileWriter(FILENAME, true);
+			FileWriter fw = new FileWriter(FILENAME, false);
 			writer = new PrintWriter(fw);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		writer.println(movie1.toXMLString() + person1.toXMLString());
-		
+		writer.println(movie1.toXMLString() + person1.toXMLString() + person2.toXMLString());
+		writer.println(movie2.toXMLString() + person3.toXMLString() + person4.toXMLString() + person2.toXMLString());
 		writer.close();
 		
 	}
